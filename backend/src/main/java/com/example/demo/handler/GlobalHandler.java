@@ -43,7 +43,7 @@ public class GlobalHandler {
     }
     @ExceptionHandler(BadCredentialsException.class)
     public  ResponseEntity<MessageErrorResponse<String>> badcredenciais(BadCredentialsException e){
-        MessageErrorResponse<String> response = new MessageErrorResponse<>("Usuário eu senha inválidos",LocalDateTime.now());
+        MessageErrorResponse<String> response = new MessageErrorResponse<>("Usuário ou senha inválidos",LocalDateTime.now());
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
     }
 }
