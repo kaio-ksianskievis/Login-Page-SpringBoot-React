@@ -41,7 +41,7 @@ rota | descrição
 
 ### Documentação da API 📄:
 #### `/login`
-Na rota http://localhost:8080/login é onde validamos os usuário se ele existir retornará um token de acesso `JWT` caso não exista o usuário em questão é retornado uma execção.
+Na rota http://localhost:8080/login é onde validamos o usuário se ele existir retornará um token de acesso `JWT` caso não exista o usuário em questão é retornado uma exceção.
 #### Status 200 OK:
 <img src="Screenshot from 2026-02-04 14-22-36.png" alt="Requisição HTTP Post /login" width="700"/>
 
@@ -51,7 +51,7 @@ Na rota http://localhost:8080/login é onde validamos os usuário se ele existir
 
 
 #### `/register`
-Na rota http://localhost:8080/register é onde criamos os usuários e retornamos uma instancia do usuário criado. Caso seja inserido algo errado na criação é retornado uma execção.
+Na rota http://localhost:8080/register é onde criamos os usuários e retornamos uma instancia do usuário criado. Caso seja inserido algo errado na criação é retornado uma exceção.
 #### Status 201 CRIADO:
 
 <img src="Screenshot from 2026-02-04 14-19-08.png" alt="Requisição HTTP Post /register" width="700"/>
@@ -61,7 +61,7 @@ Na rota http://localhost:8080/register é onde criamos os usuários e retornamos
 <img src="Screenshot from 2026-02-04 14-19-58.png" alt="Requisição HTTP Post /register" width="500"/>
 
 #### `/verify`
-Na rota http://localhost:8080/verify é onde verificamos o email informado no /register, mandamos um codigo no email do usuário e ele deve informar no corpo da requisição, retornará o status da conta, caso seja inserido algo errado na criação é retornado uma execção.
+Na rota http://localhost:8080/verify é onde verificamos o email informado no /register, mandamos um código para o e-mail do usuário e ele deve informar no corpo da requisição, retornará o status da conta, caso seja inserido algo errado na criação é retornado uma exceção.
 
 #### Status 200 OK:
 
